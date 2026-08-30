@@ -12,22 +12,29 @@
 12    //           return nums[i];
 13    //   }  
 14    //return 0;}
-15    Map <Integer , Integer> map = new HashMap<>();
-16    for(int num : nums)
-17    {
-18        if(!map.containsKey(num))
-19        {
-20            map.put(num,0);
-21        }
-22        map.put(num,map.get(num)+1);
-23    }
-24    for(int num : nums)
-25    {
-26        if(map.get(num)==1)
-27        {
-28            return num;
-29        }
-30    }
-31 return 0;
-32    }
-33}
+15//     Map <Integer , Integer> map = new HashMap<>();
+16//     for(int num : nums)
+17//     {
+18//         if(!map.containsKey(num))
+19//         {
+20//             map.put(num,0);
+21//         }
+22//         map.put(num,map.get(num)+1);
+23//     }
+24//     for(int num : nums)
+25//     {
+26//         if(map.get(num)==1)
+27//         {
+28//             return num;
+29//         }
+30//     }
+31//  return 0;
+32
+33int freq = 0;
+34for(int num : nums)
+35{
+36    freq ^= num;
+37}
+38   return freq;
+39    }
+40}
