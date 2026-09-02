@@ -27,6 +27,6 @@
 27                j+=1;
 28            }
 29        }
-30        return Arrays.copyOf(ans,k);
+30        return Arrays.copyOfRange(ans,0,k);
 31    }
 32}
