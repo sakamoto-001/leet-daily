@@ -9,10 +9,9 @@
 9        while(sum >= target)
 10        {
 11             min = Math.min(min,right-left+1);
-12            sum -= nums[left];
-13            left++;
-14        }
-15      }
-16      return min == Integer.MAX_VALUE ? 0 : min;
-17    }
-18}
+12            sum -= nums[left++];
+13        }
+14      }
+15      return min == Integer.MAX_VALUE ? 0 : min;
+16    }
+17}
